@@ -1,0 +1,16 @@
+# Secrets
+.env
+
+# Virtual env / python
+.venv/
+__pycache__/
+*.pyc
+
+# OS / IDE
+.DS_Store
+.vscode/
+
+# Logs + temp artifacts
+*.log
+temp_*.mp4
+temp_video.mp4
