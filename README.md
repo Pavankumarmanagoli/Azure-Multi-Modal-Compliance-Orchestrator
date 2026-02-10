@@ -1,12 +1,12 @@
 # Azure Multi-Modal Compliance Orchestration Engine (LangGraph + LangSmith)
 
-🚀 **From hours of manual video audits → seconds of automated intelligence**
+ **From hours of manual video audits → seconds of automated intelligence**
 
 An enterprise-grade AI system that audits video content for regulatory and brand compliance using a multi-modal pipeline (video + audio + text). The platform ingests a YouTube video, extracts transcript and OCR with Azure Video Indexer, retrieves relevant rules via Azure AI Search, and uses Azure OpenAI with LangGraph to produce a structured compliance report. LangSmith provides LLM tracing, while Azure Application Insights delivers production observability.
 
 ---
 
-## 📌 Overview
+##  Overview
 
 The **Azure Multi-Modal Compliance Orchestration Engine** automates video compliance checks end-to-end:
 
@@ -21,7 +21,7 @@ Instead of human auditors reviewing long footage, the system **ingests, extracts
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 Organizations in finance, healthcare, media, and security must continuously monitor video content to ensure compliance with regulations (misleading claims, restricted visuals, sensitive disclosures). Manual reviews are slow, costly, and error-prone. This project solves that by:
 
@@ -32,7 +32,7 @@ Organizations in finance, healthcare, media, and security must continuously moni
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ### High-Level Workflow
 
@@ -61,7 +61,7 @@ Organizations in finance, healthcare, media, and security must continuously moni
 
 ---
 
-## 🧩 Key Technical Components
+##  Key Technical Components
 
 | Layer | Technology | Purpose |
 | --- | --- | --- |
@@ -74,7 +74,7 @@ Organizations in finance, healthcare, media, and security must continuously moni
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 .
@@ -91,7 +91,7 @@ Organizations in finance, healthcare, media, and security must continuously moni
 
 ---
 
-## ⚙️ Prerequisites
+##  Prerequisites
 
 - Python **3.13+**
 - Azure resources:
@@ -103,7 +103,7 @@ Organizations in finance, healthcare, media, and security must continuously moni
 
 ---
 
-## 🚀 Setup
+##  Setup
 
 1. **Create and activate a virtual environment**.
 2. **Install dependencies**:
@@ -145,7 +145,7 @@ LANGCHAIN_PROJECT=
 
 ---
 
-## ▶️ Run the API
+## Run the API
 
 ```bash
 uv run uvicorn backend.src.api.server:app --reload
@@ -164,7 +164,7 @@ curl -X POST http://localhost:8000/audit \
 
 ---
 
-## ▶️ Run the CLI Simulation
+##  Run the CLI Simulation
 
 ```bash
 uv run python main.py
@@ -174,7 +174,7 @@ The CLI executes the same LangGraph workflow and prints a compliance report to s
 
 ---
 
-## 🧠 Example Output (JSON Report)
+##  Example Output (JSON Report)
 
 ```json
 {
@@ -204,14 +204,14 @@ The CLI executes the same LangGraph workflow and prints a compliance report to s
 
 ---
 
-## 🔍 LangSmith Tracing & Observability
+##  LangSmith Tracing & Observability
 
 - **LangSmith** provides trace visibility into every LangGraph node, input/output, and LLM call.
 - **Application Insights** captures dependency maps, performance, failure rates, and system health for production workloads.
 
 ---
 
-## 🛠️ Troubleshooting
+##  Troubleshooting
 
 - **Missing transcript**: Ensure Azure Video Indexer finished processing and the video is accessible.  
 - **Authentication errors**: Verify Azure credentials and deployment names.  
@@ -220,7 +220,7 @@ The CLI executes the same LangGraph workflow and prints a compliance report to s
 
 ---
 
-## 🛣️ Future Enhancements
+##  Future Enhancements
 
 - Human-in-the-loop review dashboard
 - Speaker recognition
@@ -233,3 +233,4 @@ The CLI executes the same LangGraph workflow and prints a compliance report to s
 ## License
 
 This repository is licensed under the terms in `MIT LICENSE`.
+
