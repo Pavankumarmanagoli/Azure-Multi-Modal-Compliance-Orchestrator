@@ -1,4 +1,4 @@
-# Azure Multi-Modal Compliance Orchestration Engine (LangGraph + LangSmith)
+# Azure Multi-Modal Compliance Orchestrator 
 
  **From hours of manual video audits → seconds of automated intelligence**
 
@@ -32,7 +32,8 @@ Organizations in finance, healthcare, media, and security must continuously moni
 
 ---
 
-##  System Architecture
+##  Architecture
+![Architecture](System_Architecture.png)
 
 ### High-Level Workflow
 
@@ -233,4 +234,5 @@ The CLI executes the same LangGraph workflow and prints a compliance report to s
 ## License
 
 This repository is licensed under the terms in `MIT LICENSE`.
+
 
