@@ -235,4 +235,12 @@ The CLI executes the same LangGraph workflow and prints a compliance report to s
 
 This repository is licensed under the terms in `MIT LICENSE`.
 
+---
+
+## Demo Video  
+https://drive.google.com/file/d/1swOspcMTovd6TRGJK2iIswzGckA7vWWM/view?usp=sharing
+
+
+
+
 
